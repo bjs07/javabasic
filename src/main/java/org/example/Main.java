@@ -3,17 +3,22 @@ package org.example;
 import org.example.basic.Dancer;
 import org.example.basic.inherit.IdolDancer;
 import org.example.basic.inherit.StreetDancer;
+import org.example.basic.poly.PerformanceTeam;
 
 public class Main {
     public static void main(String[] args) {
-        Dancer dancer = new Dancer("총알탄소년단","춤신춤왕");
-        dancer.dance();
-        IdolDancer idolDancer = new IdolDancer("르세라핌","김채원");
-        StreetDancer streetDancer = new StreetDancer("길거리 춤꾼들","박격포");
-        idolDancer.dance();
-        System.out.println();
-        streetDancer.dance();
-        System.out.println();
+        Dancer idolDancer1 = new IdolDancer("아이돌팀1","아이돌1");
+        Dancer idolDancer2 = new IdolDancer("아이돌팀1","아이돌1");
+        Dancer idolDancer3 = new IdolDancer("아이돌팀1","아이돌1");
+
+        Dancer streetDancer1 = new StreetDancer("스트릿팀1","스트릿댄서1");
+        Dancer streetDancer2 = new StreetDancer("스트릿팀1","스트릿댄서1");
+        Dancer streetDancer3 = new StreetDancer("스트릿팀1","스트릿댄서1");
+
+        PerformanceTeam team = new PerformanceTeam();
+        team.joinDancer(idolDancer1);
+        team.joinDancer(streetDancer3);
+        team.joinDancer(streetDancer2);
 
     }
 }
