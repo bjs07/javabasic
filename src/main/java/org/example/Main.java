@@ -1,12 +1,14 @@
 package org.example;
 
 import org.example.basic.Dancer;
-import org.example.basic.inherit.IdolDancer;
-import org.example.basic.inherit.StreetDancer;
-import org.example.basic.poly.PerformanceTeam;
+import org.example.inherit.IdolDancer;
+import org.example.inherit.StreetDancer;
+import org.example.poly.PerformanceTeam;
 
 public class Main {
     public static void main(String[] args) {
+
+
         Dancer idolDancer1 = new IdolDancer("아이돌팀1","아이돌1");
         Dancer idolDancer2 = new IdolDancer("아이돌팀1","아이돌1");
         Dancer idolDancer3 = new IdolDancer("아이돌팀1","아이돌1");

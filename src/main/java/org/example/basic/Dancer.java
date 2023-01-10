@@ -2,7 +2,7 @@ package org.example.basic;
 import static java.lang.Math.*;
 import static java.lang.System.*;
 import static org.example.basic.DanceLevel.*;
-public class Dancer extends Object{
+public abstract class Dancer extends Object{
 
 
     private final String crewName;
@@ -10,6 +10,8 @@ public class Dancer extends Object{
     private boolean stretch;
     private boolean flexible;
     private DanceLevel level = BEGINNER; //춤 수준
+
+
     public Dancer(String crewName, String myName) {
         this.crewName = crewName;
         this.myName = myName;
@@ -34,15 +36,7 @@ public class Dancer extends Object{
     }
 
     // 춤추기
-    public void dance() {
-        stretch();
-        makeFlexible();
-        if (!flexible) {
-            System.out.println("유연성 운동 안해서 죽었습니다.");
-            return;
-        }
-        System.out.println(myName + "님이 춤을 춥니다.");
-    }
+    public abstract void dance();
 
     public String getCrewName() {
         return crewName;
@@ -51,4 +45,6 @@ public class Dancer extends Object{
     public String getMyName() {
         return myName;
     }
+
+
 }
