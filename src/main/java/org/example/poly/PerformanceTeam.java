@@ -20,6 +20,7 @@ public class PerformanceTeam {
         for (Dancer dancer : dancers) {
 
         }
+
     }
 
 }
