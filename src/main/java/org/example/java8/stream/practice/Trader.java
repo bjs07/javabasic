@@ -22,7 +22,7 @@ public class Trader {
     Trader alan = new Trader("Alan", "Cambridge");
     Trader brian = new Trader("Brian", "Cambridge");
 
-    List<Transaction> transactions = List.of(
+     List<Transaction> transactions = List.of(
             new Transaction(brian, 2021, 300),
             new Transaction(raoul, 2022, 1000),
             new Transaction(raoul, 2021, 400),

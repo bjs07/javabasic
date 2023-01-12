@@ -10,7 +10,6 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @ToString
-@RequiredArgsConstructor
 public class Dish {
     private final String name;
     private final boolean vegetarian;
